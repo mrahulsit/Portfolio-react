@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Content{
+    width: 750px;
+    height: 550px;
+    background-color: rgba(255, 3, 3, 0.196);
+    z-index: -3;
+    transition: 4s;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    border-radius: 5%;
+    border: 5px solid transparent; 
+    border-image: linear-gradient(to right,rgb(0, 0, 255), rgb(238, 97, 191), rgb(247, 5, 247)); 
+    border-image-slice: 1; 
+}
+
+.Name{
+    margin: 40px 20px 0px;
+    padding: 10px;
+    font-size: 3rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: 4px;
+    animation: slide-in-anim 1.5s ease-out forwards;
+}
+@keyframes slide-in-anim {
+	0% {
+		opacity: 0;
+        transform: translateY(-10%);
+	}
+	100% {
+		transform: translateY(-10%);
+	}
+}
+.Name1{
+    font-size: 2rem;
+    font-family: Montserrat;
+    margin: 0px 25px 0px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    animation: slide-in-anim 1.5s ease-out forwards;
+}

@@ -1,0 +1,23 @@
+*{
+    overflow: hidden;
+}
+
+.Box::before{
+    content: " ";
+    position: absolute;
+    inset: -5px 120px;
+    background-image: linear-gradient(315deg,rgb(251, 6, 206),rgb(151, 7, 240),rgb(10, 10, 192));
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.Box:hover:before{
+    inset: -5px 0px ;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
